@@ -22,11 +22,17 @@
                                 <rect key="frame" x="52" y="440" width="76" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="steve" image="SteveJobs"/>
+                                <connections>
+                                    <action selector="steveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NET-gs-Din"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pmx-kv-Kjc">
                                 <rect key="frame" x="179" y="440" width="76" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="bill" image="BillGates"/>
+                                <connections>
+                                    <action selector="billButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="reZ-pm-gr6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bjg-Hq-bR1">
                                 <rect key="frame" x="47" y="399" width="86" height="33"/>
@@ -59,6 +65,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.73637519537155316" green="0.86673383875809507" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="bill" destination="pmx-kv-Kjc" id="jOe-SP-YAD"/>
+                        <outlet property="factLabel" destination="mVc-Ct-l0W" id="bbX-Hg-Tgj"/>
+                        <outlet property="scoreLabel" destination="EDs-I2-kTY" id="bWN-wa-YBX"/>
+                        <outlet property="steve" destination="waZ-S2-rBo" id="Bpn-PL-DAc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
